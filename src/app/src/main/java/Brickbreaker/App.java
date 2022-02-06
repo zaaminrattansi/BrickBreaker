@@ -1,4 +1,4 @@
-package Bricks;
+package Brickbreaker;
 
 
 // Import needed libraries
@@ -14,7 +14,7 @@ import javax.swing.JFrame;
 
 
 
-public class GamePanel extends JPanel implements Runnable, KeyListener, ActionListener {
+public class App extends JPanel implements Runnable, KeyListener, ActionListener {
 	
 	
 	
@@ -87,7 +87,7 @@ public void restore() {
 	}
 	
 	// Method used to initialize the Game screen (size, etc)
-	public GamePanel() {
+	public App() {
 		super();
 		setPreferredSize(new Dimension(WIDTH, HEIGHT));
 		setFocusable(true);
@@ -1012,7 +1012,7 @@ public void restore() {
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		
-		window.add(new GamePanel());
+		window.add(new App());
 		
 		window.pack();
 		window.setVisible(true);
